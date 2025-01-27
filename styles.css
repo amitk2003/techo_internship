@@ -1,0 +1,135 @@
+/* Default light mode styles */
+body {
+    background-color: white;
+    color: black;
+}
+
+/* Dark mode styles */
+body.dark-mode {
+    background-color: black;
+    color: white;
+}
+
+/* Navbar styles */
+.navbar-dark.bg-dark {
+    background-color: #000 !important;
+}
+
+body.dark-mode .navbar {
+    background-color: #222 !important;
+    color: white;
+}
+
+/* Dark mode toggle button */
+#darkModeToggle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 5px;
+    transition: transform 0.2s ease;
+}
+
+#darkModeToggle:hover {
+    transform: scale(1.1);
+}
+
+#night {
+    width: 40px;
+    height: 40px;
+}
+
+/* Card styles */
+.card {
+    background-color: white;
+    color: black;
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition */
+}
+
+body.dark-mode .card {
+    background-color: #333;
+    color: white;
+}
+
+body.dark-mode .card:hover {
+    background-color: #444;
+    color: #ddd;
+}
+
+/* Links */
+a {
+    color: blue;
+    transition: color 0.3s;
+}
+
+body.dark-mode a {
+    color: whitesmoke;
+}
+
+/* Active navbar links */
+.nav-link.active {
+    font-weight: bold;
+    color: #007bff !important;
+}
+
+body.dark-mode .nav-link.active {
+    color: #0dcaf0 !important;
+}
+
+/* Footer */
+footer {
+    background-color: white;
+    color: black;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+body.dark-mode footer {
+    background-color: #111;
+    color: white;
+}
+
+/* Hero Section */
+#home {
+    background-color: white;
+    color: black;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+body.dark-mode #home {
+    background-color: #000; /* Black background for dark mode */
+    color: white; /* White text for dark mode */
+}
+
+body:not(.dark-mode) #home {
+    background-color: white; /* Original light background */
+    color: #000; /* Original dark text */
+}
+
+/* Services Section */
+body.dark-mode #services {
+    background-color: #222;
+    color: white;
+}
+#about{
+    margin:20px;
+    border:3px solid white;
+    text-decoration: none;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .navbar-brand {
+        font-size: 1.2rem;
+    }
+
+    #home h1 {
+        font-size: 2rem;
+    }
+
+    .card {
+        margin-bottom: 20px;
+    }
+}
